@@ -25,6 +25,11 @@ public class test {
         driver = new ChromeDriver(options);
     }
 
+    @BeforeEach
+    void setUp(){
+        driver = new ChromeDriver();
+    }
+
     @Test
     void test1(){
         driver.get("http://localhost:9999");
